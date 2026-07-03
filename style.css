@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Figtree;
+    src: url(./assets/fonts/Figtree-VariableFont_wght.ttf)
+}
+
+body {
+    background-color: #F4D04E;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-card {
+    font-family: Figtree, sans-serif;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    padding: 24px;
+    max-inline-size: 24rem;
+    max-block-size: 33rem;
+    border-radius: 20px;
+    line-height: 150%;
+    border: 1px solid #000000;
+    box-shadow: 10px 10px #000000;
+}
+
+.blog-card > img:first-child {
+    max-block-size: 12.5rem; 
+    max-width: 100%; /* pretty important, prevents images to never be wider than blog-card container*/
+    border-radius: 10px;
+}
+
+/* blog-tag choices were made in mind that more tags could be created */
+.blog-tags {
+    display: flex;
+    list-style-type: none;
+    padding: 0; 
+    gap: 12px;
+    font-size: 0.875rem;
+    font-weight: 800;
+
+}
+
+.blog-tags li {
+    background-color: #F4D04E;
+    color: #111111;
+    padding-inline: 12px;
+    padding-block: 4px;
+    border-radius: 4px;
+}
+
+/* published date */
+.blog-tags + p {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #111111;
+}
+
+.blog-card section h2 {
+    font-size: 1.5rem;
+}
+
+.blog-card section p {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #6B6B6B;
+}
+
+.blog-card footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.875rem;
+    font-weight: 800;
+}
+
+.blog-card footer img {
+    width: 2rem;
+    height: 2rem;
+}
