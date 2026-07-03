@@ -3,8 +3,16 @@
     src: url(./assets/fonts/Figtree-VariableFont_wght.ttf)
 }
 
+:root {
+    --color-bg: #F4D04E;
+    --color-card-bg: #FFFFFF;
+    --color-card-description: #6B6B6B;
+    --color-card-text: #111111;
+    --color-card-border: #000000;
+}
+
 body {
-    background-color: #F4D04E;
+    background-color: var(--color-bg);
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -14,14 +22,14 @@ body {
 .blog-card {
     font-family: Figtree, sans-serif;
     box-sizing: border-box;
-    background-color: #FFFFFF;
+    background-color: var(--color-card-bg);
     padding: 24px;
     max-inline-size: 24rem;
     max-block-size: 33rem;
     border-radius: 20px;
     line-height: 150%;
-    border: 1px solid #000000;
-    box-shadow: 10px 10px #000000;
+    border: 1px solid var(--color-card-border);
+    box-shadow: 6px 6px var(--color-card-border);
 }
 
 .blog-card > img:first-child {
@@ -42,8 +50,8 @@ body {
 }
 
 .blog-tags li {
-    background-color: #F4D04E;
-    color: #111111;
+    background-color: var(--color-bg);
+    color: var(--color-card-text);
     padding-inline: 12px;
     padding-block: 4px;
     border-radius: 4px;
@@ -53,7 +61,7 @@ body {
 .blog-tags + p {
     font-size: 0.875rem;
     font-weight: 500;
-    color: #111111;
+    color: var(--color-card-text);
 }
 
 .blog-card section h2 {
@@ -63,7 +71,7 @@ body {
 .blog-card section p {
     font-weight: 500;
     font-size: 1rem;
-    color: #6B6B6B;
+    color: var(--color-card-description);
 }
 
 .blog-card footer {
